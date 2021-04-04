@@ -1,16 +1,41 @@
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     &__logo {
-        width: 96px;
-        height: 100px;
+        margin-right: 42px;
     }
     &__menu {
+        padding: 60px 50px 58px 42px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin: 0;
+        padding: 0;
+        list-style-type: none;
+        li {
+            margin-left: 13px;
+        }
     }
-
+    &__link {
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 400;
+        text-align: left;
+        &:hover {
+            color: $main-color;
+        }
+    }
+    &__item {
+        border-right: 1px dotted white;
+        padding-right: 13px;
+        &:last-child {
+            border-right: none;
+        }
+    }
+    &__title {
+        color: #ffffff;
+        font-size: 14px;
+        text-align: right;
+    }
 }
